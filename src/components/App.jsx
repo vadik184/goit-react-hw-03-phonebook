@@ -23,7 +23,7 @@ export class App extends Component {
     const contactsList = localStorage.getItem('contactsList');
     const parsContacts = JSON.parse(contactsList);
 
-    if (parsContacts) {
+    if (contactsList !== null) {
       this.setState({ contacts: parsContacts });
     }
   }
